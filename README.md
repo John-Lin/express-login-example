@@ -14,7 +14,7 @@ The original tutorial check out the blog post [User Authentication With Passport
 
 # Development
 
-First, Modify `config/default.json.example` to `config/default.json` and edit host, port and dbName for your mongodb.
+First, modify `config/default.json.example` to `config/default.json` and edit host, port and dbName for your mongodb.
 
 ```
 npm run dev
