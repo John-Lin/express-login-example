@@ -53,6 +53,8 @@ if (process.env.NODE_ENV === 'development') {
   var PORT = config.get('dbConfig.port');
   var DB_NAME = config.get('dbConfig.dbName');
   mongoose.connect(`${HOST}:${PORT}/${DB_NAME}`);
+} else if (process.env.NODE_ENV === 'test') {
+  mongoose.connect(process.env.MONGOTEST_URI);
 } else {
   mongoose.connect(process.env.MONGOLAB_URI);
 }

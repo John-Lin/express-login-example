@@ -1,5 +1,7 @@
 # express-login-example
 
+[ ![Codeship Status for John-Lin/express-login](https://codeship.com/projects/439b9390-b30f-0133-fedc-0e52fcdb9711/status?branch=master)](https://codeship.com/projects/133581)
+
 This is a user authentication demonstration web app build with ExpressJS and MongoDB. It is modified for my personal favor and heavily borrowed from [passport-local-express4](https://github.com/mjhea0/passport-local-express4).
 
 In this simple web app provided:
@@ -26,8 +28,8 @@ Note: In development mode `nodemon` will automatically restart the server.
 
 # Production
 
-Environment variables `DB_HOST`, `DB_PORT` and `DB_NAME` must be set.
+Environment variables `MONGOLAB_URI` must be set.
 
 ```
-DB_HOST='111.222.121.212' DB_PORT=7788 DB_NAME='users' npm start
+MONGOLAB_URI='mongodb://db1.example.net:2500/myproject' npm start
 ```
