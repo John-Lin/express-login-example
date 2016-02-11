@@ -48,7 +48,7 @@ passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
 // mongoose
-if (process.env.NODE_ENV || 'development') {
+if (process.env.NODE_ENV === 'development') {
   var HOST = config.get('dbConfig.host');
   var PORT = config.get('dbConfig.port');
   var DB_NAME = config.get('dbConfig.dbName');
