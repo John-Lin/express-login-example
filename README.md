@@ -12,6 +12,8 @@ In this simple web app provided:
 The original tutorial check out the blog post [User Authentication With Passport and Express 4](http://mherman.org/blog/2015/01/31/local-authentication-with-passport-and-express-4/).
 
 
+The working example is running on [https://express-login.herokuapp.com/](https://express-login.herokuapp.com/)
+
 # Development
 
 First, modify `config/default.json.example` to `config/default.json` and edit host, port and dbName for your mongodb.
