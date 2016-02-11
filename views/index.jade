@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .container
+    h1= title
+    p Welcome to #{title} page
+    if (user)
+      p You are currently logged in as #{user.username}
+      a(href="/logout") Logout
