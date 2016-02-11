@@ -52,13 +52,10 @@ if (process.env.NODE_ENV || 'development') {
   var HOST = config.get('dbConfig.host');
   var PORT = config.get('dbConfig.port');
   var DB_NAME = config.get('dbConfig.dbName');
+  mongoose.connect(`${HOST}:${PORT}/${DB_NAME}`);
 } else {
-  var HOST = process.env.DB_HOST;
-  var PORT = process.env.DB_PORT;
-  var DB_NAME = process.env.DB_NAME;
+  mongoose.connect(process.env.MONGOLAB_URI);
 }
-
-mongoose.connect(`${HOST}:${PORT}/${DB_NAME}`);
 
 app.use('/users', users);
 
